@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecurePay - Open Account</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar Section -->
+  <nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="money-bag.png" alt="SecurePay" class="w-10 h-10 mr-3"> <!-- Logo Image -->
+        <a href="index.html" class="text-white text-2xl font-bold">SecurePay</a>
+      </div>
+      <div class="flex space-x-6">
+        <a href="index.html" class="text-white hover:text-gray-200">Home</a>
+        <a href="getstarted.html" class="text-white hover:text-gray-200">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Account Opening Form -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Open Your SecurePay Account</h2>
+    <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+      <form>
+        <!-- Full Name -->
+        <div class="mb-4">
+          <label for="fullName" class="block text-lg font-medium">Full Name</label>
+          <input type="text" id="fullName" name="fullName" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label for="email" class="block text-lg font-medium">Email Address</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-4">
+          <label for="phone" class="block text-lg font-medium">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter your phone number" required>
+        </div>
+
+        <!-- Account Type -->
+        <div class="mb-4">
+          <label for="accountType" class="block text-lg font-medium">Account Type</label>
+          <select id="accountType" name="accountType" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <option value="checking">Checking Account</option>
+            <option value="savings">Savings Account</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="mt-6">
+          <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
